@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pizzabot</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="pizzabot1.js"></script> 
+    <div class="box1">
+      <header>
+        <h1>マチルダ</h1> <p>の</p> <h1>ピーザ</h1>
+      </header>
+    
+      <h3>いらっしゃいませ！</h3><br>
+      <p>私たちの食べ物がVegetarianのピーザとHawaiianのピーザとPepperoniのピーザをあります。</p>
+      <p></p>
+      <form id="pizzaOrderForm">
+        <label for="orderName">どちらのピーザはいいですか?</label><br>
+        <select id="orderName" name="orderName">
+            <option value="vegetarian">Vegetarian Pizza</option>
+            <option value="hawaiian">Hawaiian Pizza</option>
+            <option value="pepperoni">Pepperoni Pizza</option>
+        </select>
+
+        <br>
+
+        <label for="orderQuantity">いくつはほしい？</label> <br>
+        <input type="number" id="orderQuantity" name="orderQuantity" min="1" max="10" required>
+        <br>
+        <button type="button" onclick="submitOrder()">Submit Order</button>
+      </form>
+    </div>
+
+    <div class="box2">
+      <h2>注文:</h2>
+      <p id="orderSummary"></p>
+    </div>
+  </body>
+</html>
