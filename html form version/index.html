@@ -12,11 +12,11 @@
         <h1>マチルダ</h1> <p>の</p> <h1>ピーザ</h1>
       </header>
     
-      <h3>いらっしゃいませ！</h3><br>
-      <p>私たちの食べ物がVegetarianのピーザとHawaiianのピーザとPepperoniのピーザをあります。</p>
+      <h3>いらっしゃいませ！</h3>
+      <p>私たちの食べ物が<br>VegetarianのピーザとHawaiianのピーザとPepperoniのピーザ<br>をあります。</p>
       <p></p>
       <form id="pizzaOrderForm">
-        <label for="orderName">どちらのピーザはいいですか?</label><br>
+        <label for="orderName">どちらのピーザがいいですか?</label><br>
         <select id="orderName" name="orderName">
             <option value="vegetarian">Vegetarian Pizza</option>
             <option value="hawaiian">Hawaiian Pizza</option>
@@ -28,13 +28,14 @@
         <label for="orderQuantity">いくつはほしい？</label> <br>
         <input type="number" id="orderQuantity" name="orderQuantity" min="1" max="10" required>
         <br>
-        <button type="button" onclick="submitOrder()">Submit Order</button>
+        <button type="button" onclick="submitOrder()">注文</button>
       </form>
     </div>
 
     <div class="box2">
       <h2>注文:</h2>
       <p id="orderSummary"></p>
+      <button>paypal</button>
     </div>
   </body>
 </html>
